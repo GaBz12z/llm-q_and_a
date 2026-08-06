@@ -1,0 +1,354 @@
+{
+  "responsesByQuestion": [
+    {
+      "questionGlobalId": "acidsBase_300",
+      "responses": [
+        {
+          "responseId": "acidsBase_300_resp_000",
+          "targetScorePercent": 0,
+          "expectedScore": 0,
+          "studentAnswer": "Eu usaria HCl concentrado porque ácido forte controla bem o pH. Se colocar base, é só adicionar mais HCl e o pH volta exatamente para 7,4. Não precisa de outra substância."
+        },
+        {
+          "responseId": "acidsBase_300_resp_025",
+          "targetScorePercent": 25,
+          "expectedScore": 2.5,
+          "studentAnswer": "A solução deve ser um tampão para não mudar muito o pH. Eu escolheria algo parecido com o bicarbonato, porque ele é usado no corpo, mas não sei exatamente qual parte reage quando entra ácido ou base."
+        },
+        {
+          "responseId": "acidsBase_300_resp_050",
+          "targetScorePercent": 50,
+          "expectedScore": 5,
+          "studentAnswer": "Eu faria um tampão com ácido carbônico e bicarbonato, porque isso ajuda a manter o pH perto do fisiológico. Quando entra ácido, o bicarbonato consegue segurar parte dos H+, mas eu não sei explicar muito bem o que acontece se entrar uma base."
+        },
+        {
+          "responseId": "acidsBase_300_resp_075",
+          "targetScorePercent": 75,
+          "expectedScore": 7.5,
+          "studentAnswer": "Usaria o par ácido carbônico/bicarbonato para manter o pH por volta de 7,4. O bicarbonato consumiria H+ quando entrasse ácido, e o ácido carbônico ajudaria quando houvesse base. A ideia é boa porque o sistema já atua em meios biológicos, embora eu não saiba calcular a proporção exata pelo pKa."
+        },
+        {
+          "responseId": "acidsBase_300_resp_100",
+          "targetScorePercent": 100,
+          "expectedScore": 10,
+          "studentAnswer": "Eu proporia um tampão baseado no par ácido carbônico/bicarbonato, ajustado para pH próximo de 7,4. O bicarbonato, como base conjugada, consumiria H+ adicionado, enquanto o ácido carbônico poderia doar H+ para neutralizar OH- adicionado. A eficiência dependeria da razão entre ácido e base conjugada e de um pKa compatível com a faixa desejada. Isso ajudaria a manter processos celulares e proteínas em condições próximas das fisiológicas."
+        }
+      ]
+    },
+    {
+      "questionGlobalId": "aminoacids_400",
+      "responses": [
+        {
+          "responseId": "aminoacids_400_resp_000",
+          "targetScorePercent": 0,
+          "expectedScore": 0,
+          "studentAnswer": "Eu faria a sequência A-T-C-G-A porque bases iguais se encaixam melhor em uma proteína positiva. A carga não importa muito, o importante é seguir uma ordem parecida com DNA."
+        },
+        {
+          "responseId": "aminoacids_400_resp_025",
+          "targetScorePercent": 25,
+          "expectedScore": 2.5,
+          "studentAnswer": "Eu usaria alguns aminoácidos com carga oposta à região positiva, talvez algo negativo. Não lembro os nomes, mas a ideia seria colocar resíduos que fossem atraídos pela parte positiva da proteína."
+        },
+        {
+          "responseId": "aminoacids_400_resp_050",
+          "targetScorePercent": 50,
+          "expectedScore": 5,
+          "studentAnswer": "Uma sequência poderia ser Glu-Asp-Ser. Glutamato e aspartato são negativos e poderiam interagir com a região positiva. A serina talvez ajude por ser polar, mas minha sequência ficou curta demais."
+        },
+        {
+          "responseId": "aminoacids_400_resp_075",
+          "targetScorePercent": 75,
+          "expectedScore": 7.5,
+          "studentAnswer": "Eu criaria Glu-Asp-Gly-Ser-Asp. Glu e Asp devem ajudar por terem carga negativa e serem atraídos pela região positiva. Glicina daria alguma flexibilidade e serina poderia fazer interações polares. Faltou talvez explicar melhor a orientação da sequência na proteína."
+        },
+        {
+          "responseId": "aminoacids_400_resp_100",
+          "targetScorePercent": 100,
+          "expectedScore": 10,
+          "studentAnswer": "Eu proporia o peptídeo Glu-Asp-Gly-Ser-Asp. Glutamato e aspartato possuem cadeias laterais ácidas, normalmente carregadas negativamente em pH fisiológico, favorecendo atração eletrostática com uma região positiva. A glicina pode dar flexibilidade conformacional e a serina pode contribuir com interações polares. Assim, a sequência foi desenhada para combinar carga negativa, flexibilidade e complementaridade química."
+        }
+      ]
+    },
+    {
+      "questionGlobalId": "biochem_100",
+      "responses": [
+        {
+          "responseId": "biochem_100_resp_000",
+          "targetScorePercent": 0,
+          "expectedScore": 0,
+          "studentAnswer": "As moléculas orgânicas são importantes porque estão vivas e conseguem decidir como reagir. Se duas moléculas têm a mesma fórmula, elas sempre fazem exatamente a mesma coisa no organismo."
+        },
+        {
+          "responseId": "biochem_100_resp_025",
+          "targetScorePercent": 25,
+          "expectedScore": 2.5,
+          "studentAnswer": "As propriedades físico-químicas importam porque mudam como as moléculas funcionam. Por exemplo, grupos funcionais existem nas moléculas orgânicas, mas não sei explicar bem como eles mudam a solubilidade ou a reatividade."
+        },
+        {
+          "responseId": "biochem_100_resp_050",
+          "targetScorePercent": 50,
+          "expectedScore": 5,
+          "studentAnswer": "Grupos como hidroxila e carboxila podem mudar propriedades das moléculas, como polaridade e carga. Isso deve ser importante para a vida porque moléculas precisam interagir, mas minha explicação ainda não mostra bem como isso se conecta à origem da vida."
+        },
+        {
+          "responseId": "biochem_100_resp_075",
+          "targetScorePercent": 75,
+          "expectedScore": 7.5,
+          "studentAnswer": "As propriedades físico-químicas ajudam a explicar por que moléculas orgânicas conseguem formar sistemas biológicos. Grupos como hidroxila, carboxila e amino mudam polaridade, carga e reatividade, influenciando solubilidade e reconhecimento molecular. A estereoquímica também pode fazer moléculas parecidas terem funções diferentes. A parte da origem da vida fica mais implícita na minha resposta."
+        },
+        {
+          "responseId": "biochem_100_resp_100",
+          "targetScorePercent": 100,
+          "expectedScore": 10,
+          "studentAnswer": "Eu explicaria que a origem e a manutenção da vida dependem de moléculas orgânicas capazes de formar estruturas estáveis e interações específicas. Grupos funcionais como hidroxila, carboxila, amino e fosfato modificam polaridade, carga, solubilidade e reatividade. Além disso, isomeria e estereoquímica permitem que moléculas com a mesma fórmula tenham formas e funções diferentes. Essas propriedades sustentam reconhecimento molecular, formação de polímeros, catálise e organização celular."
+        }
+      ]
+    },
+    {
+      "questionGlobalId": "carbohydrates_800",
+      "responses": [
+        {
+          "responseId": "carbohydrates_800_resp_000",
+          "targetScorePercent": 0,
+          "expectedScore": 0,
+          "studentAnswer": "Carboidratos estruturais e de reserva são a mesma coisa porque todos são feitos de glicose. Eles são ligados por ligações peptídicas e por isso servem tanto para formar proteínas quanto para guardar energia."
+        },
+        {
+          "responseId": "carbohydrates_800_resp_025",
+          "targetScorePercent": 25,
+          "expectedScore": 2.5,
+          "studentAnswer": "Eu diria que alguns carboidratos servem para energia e outros para estrutura. Amido dá energia e celulose dá sustentação, mas não lembro direito o tipo de ligação que muda entre eles."
+        },
+        {
+          "responseId": "carbohydrates_800_resp_050",
+          "targetScorePercent": 50,
+          "expectedScore": 5,
+          "studentAnswer": "Amido ou glicogênio são carboidratos de reserva, enquanto celulose é estrutural. A diferença tem relação com ligações alfa e beta entre glicoses. Acho que as ligações beta deixam a celulose mais resistente, mas não sei explicar bem a digestão ou a forma das cadeias."
+        },
+        {
+          "responseId": "carbohydrates_800_resp_075",
+          "targetScorePercent": 75,
+          "expectedScore": 7.5,
+          "studentAnswer": "Eu compararia glicogênio e celulose. O glicogênio armazena energia e tem ligações alfa, além de ramificações que facilitam a mobilização da glicose. A celulose tem ligações beta-1,4 e forma cadeias mais lineares e resistentes. Faltaria detalhar melhor por que enzimas humanas lidam de modo diferente com esses polímeros."
+        },
+        {
+          "responseId": "carbohydrates_800_resp_100",
+          "targetScorePercent": 100,
+          "expectedScore": 10,
+          "studentAnswer": "Eu criaria um modelo comparando glicogênio e celulose. Ambos são polímeros de glicose, mas o glicogênio possui ligações alfa e ramificações, o que favorece armazenamento e mobilização rápida de energia. A celulose possui ligações beta-1,4, formando cadeias lineares que se associam por interações entre cadeias e geram resistência mecânica. Assim, a ligação glicosídica altera a arquitetura do polímero e explica a diferença entre função energética e função estrutural."
+        }
+      ]
+    },
+    {
+      "questionGlobalId": "enzymes_550",
+      "responses": [
+        {
+          "responseId": "enzymes_550_resp_000",
+          "targetScorePercent": 0,
+          "expectedScore": 0,
+          "studentAnswer": "Eu aqueceria a enzima até ela parar de funcionar. Se ela parar, é inibição competitiva; se não parar, é não competitiva. A quantidade de substrato não precisa ser medida."
+        },
+        {
+          "responseId": "enzymes_550_resp_025",
+          "targetScorePercent": 25,
+          "expectedScore": 2.5,
+          "studentAnswer": "Eu colocaria enzima, substrato e inibidor em tubos diferentes e veria se a reação diminui. Se diminuir muito, talvez seja não competitiva, mas não sei que variável eu deveria mudar para separar os dois casos."
+        },
+        {
+          "responseId": "enzymes_550_resp_050",
+          "targetScorePercent": 50,
+          "expectedScore": 5,
+          "studentAnswer": "Eu testaria a enzima com e sem inibidor e aumentaria a concentração de substrato. Se o substrato melhorar a reação, deve ser competitiva. Se não melhorar, pode ser não competitiva. Não sei explicar direito o que aconteceria com Km e Vmax."
+        },
+        {
+          "responseId": "enzymes_550_resp_075",
+          "targetScorePercent": 75,
+          "expectedScore": 7.5,
+          "studentAnswer": "Faria curvas de velocidade com várias concentrações de substrato, com e sem inibidor. Na competitiva, aumentar substrato reduziria o efeito do inibidor e o Km aparente aumentaria. Na não competitiva, aumentar substrato não recuperaria totalmente a velocidade. Eu ainda deixei meio simplificado o comportamento de Vmax e Km."
+        },
+        {
+          "responseId": "enzymes_550_resp_100",
+          "targetScorePercent": 100,
+          "expectedScore": 10,
+          "studentAnswer": "Eu mediria a velocidade inicial da enzima em várias concentrações de substrato, primeiro sem inibidor e depois com o inibidor. Se a inibição for competitiva, o aumento de substrato deve compensar parcialmente o inibidor, com Km aparente aumentado e Vmax semelhante. Se for não competitiva ideal, o aumento de substrato não restaura completamente a atividade, com Vmax reduzida e Km pouco alterado. Assim, a comparação das curvas permite distinguir os mecanismos."
+        }
+      ]
+    },
+    {
+      "questionGlobalId": "lipids_600",
+      "responses": [
+        {
+          "responseId": "lipids_600_resp_000",
+          "targetScorePercent": 0,
+          "expectedScore": 0,
+          "studentAnswer": "Uma molécula anfipática é totalmente hidrofóbica, então ela simplesmente se dissolve inteira na água. As caudas apolares gostam de água e ficam do lado de fora."
+        },
+        {
+          "responseId": "lipids_600_resp_025",
+          "targetScorePercent": 25,
+          "expectedScore": 2.5,
+          "studentAnswer": "Ela tem uma parte que gosta de água e outra que não gosta. Por isso deve formar algum tipo de grupo na água, mas não sei dizer se seria micela, bicamada ou como as partes ficam organizadas."
+        },
+        {
+          "responseId": "lipids_600_resp_050",
+          "targetScorePercent": 50,
+          "expectedScore": 5,
+          "studentAnswer": "Moléculas anfipáticas têm cabeça hidrofílica e cauda hidrofóbica. Em água, as cabeças ficam mais voltadas para a água e as caudas tentam evitar a água. Isso pode formar membranas, mas minha explicação não diferencia bem micelas de bicamadas."
+        },
+        {
+          "responseId": "lipids_600_resp_075",
+          "targetScorePercent": 75,
+          "expectedScore": 7.5,
+          "studentAnswer": "Eu preveria que elas se organizam com as cabeças polares em contato com a água e as caudas apolares escondidas. Dependendo da forma da molécula, podem formar micelas ou bicamadas. Essa organização é importante para membranas biológicas, embora eu não detalhe muito as interações hidrofóbicas."
+        },
+        {
+          "responseId": "lipids_600_resp_100",
+          "targetScorePercent": 100,
+          "expectedScore": 10,
+          "studentAnswer": "Uma molécula lipídica anfipática possui uma região hidrofílica, geralmente polar ou carregada, e uma região hidrofóbica, geralmente apolar. Em água, as cabeças hidrofílicas tendem a ficar voltadas para o meio aquoso, enquanto as caudas hidrofóbicas ficam protegidas do contato com a água. Isso permite a formação de micelas ou bicamadas, dependendo da geometria molecular. A mesma lógica explica a formação de membranas biológicas por fosfolipídeos."
+        }
+      ]
+    },
+    {
+      "questionGlobalId": "membranes_700",
+      "responses": [
+        {
+          "responseId": "membranes_700_resp_000",
+          "targetScorePercent": 0,
+          "expectedScore": 0,
+          "studentAnswer": "Para a membrana ficar mais fluida no frio, eu colocaria mais ácidos graxos saturados longos, porque eles ficam retos e deixam tudo mais solto. Colesterol não tem função na membrana."
+        },
+        {
+          "responseId": "membranes_700_resp_025",
+          "targetScorePercent": 25,
+          "expectedScore": 2.5,
+          "studentAnswer": "Eu mudaria os lipídeos para a membrana não congelar no frio. Talvez colocaria lipídeos mais flexíveis, mas não sei dizer exatamente se isso envolve saturação, insaturação ou colesterol."
+        },
+        {
+          "responseId": "membranes_700_resp_050",
+          "targetScorePercent": 50,
+          "expectedScore": 5,
+          "studentAnswer": "Eu aumentaria ácidos graxos insaturados, porque eles ajudam a membrana a ficar mais fluida. Acho que isso tem relação com as dobras nas caudas. O colesterol também participa, mas não sei se ele aumenta ou diminui a fluidez nesse caso."
+        },
+        {
+          "responseId": "membranes_700_resp_075",
+          "targetScorePercent": 75,
+          "expectedScore": 7.5,
+          "studentAnswer": "Em baixa temperatura, eu aumentaria a proporção de fosfolipídeos com caudas insaturadas, porque as duplas ligações dificultam o empacotamento das caudas. Isso ajudaria a manter a bicamada mais fluida. Também ajustaria colesterol para evitar rigidez excessiva, embora o papel dele varie conforme a condição."
+        },
+        {
+          "responseId": "membranes_700_resp_100",
+          "targetScorePercent": 100,
+          "expectedScore": 10,
+          "studentAnswer": "Eu proporia aumentar a proporção de ácidos graxos insaturados e evitar excesso de caudas saturadas longas. As duplas ligações cis criam dobras nas caudas, reduzem o empacotamento e ajudam a manter a fluidez quando a temperatura cai. Também ajustaria a quantidade de colesterol, pois ele modula a fluidez e pode impedir empacotamento excessivo em baixas temperaturas. Essa composição preserva a organização funcional da bicamada e a atividade de proteínas de membrana."
+        }
+      ]
+    },
+    {
+      "questionGlobalId": "nucleicAcids_900",
+      "responses": [
+        {
+          "responseId": "nucleicAcids_900_resp_000",
+          "targetScorePercent": 0,
+          "expectedScore": 0,
+          "studentAnswer": "A proteína é feita diretamente de A, T, C e G. O DNA vira proteína quando as bases se juntam por ligação peptídica, sem precisar de RNA."
+        },
+        {
+          "responseId": "nucleicAcids_900_resp_025",
+          "targetScorePercent": 25,
+          "expectedScore": 2.5,
+          "studentAnswer": "O DNA tem a informação genética e no final isso gera proteínas. Acho que existe RNA no meio, mas não sei explicar direito o que ele faz nem como a sequência vira aminoácidos."
+        },
+        {
+          "responseId": "nucleicAcids_900_resp_050",
+          "targetScorePercent": 50,
+          "expectedScore": 5,
+          "studentAnswer": "O caminho seria DNA para RNA e depois proteína. Na transcrição se forma RNA a partir do DNA. Depois o RNA participa da produção da proteína, mas eu ainda misturo um pouco tradução com transcrição e não expliquei bem os códons."
+        },
+        {
+          "responseId": "nucleicAcids_900_resp_075",
+          "targetScorePercent": 75,
+          "expectedScore": 7.5,
+          "studentAnswer": "Eu faria o esquema DNA -> RNA -> proteína. O DNA guarda a informação em sua sequência de bases. Pela transcrição, forma-se um RNA mensageiro, e depois o ribossomo lê esse RNA para montar a proteína. Eu mencionaria códons, mas talvez sem detalhar muito a relação de cada códon com aminoácidos."
+        },
+        {
+          "responseId": "nucleicAcids_900_resp_100",
+          "targetScorePercent": 100,
+          "expectedScore": 10,
+          "studentAnswer": "Meu esquema seria DNA -> RNA -> proteína. O DNA armazena a informação genética na sequência de nucleotídeos. Durante a transcrição, uma região do DNA serve de molde para a síntese de RNA mensageiro. Na tradução, o ribossomo lê os códons do RNA mensageiro, e cada códon é interpretado segundo o código genético para orientar a incorporação de aminoácidos. Assim, a informação em bases nucleotídicas resulta em uma cadeia polipeptídica."
+        }
+      ]
+    },
+    {
+      "questionGlobalId": "proteins_500",
+      "responses": [
+        {
+          "responseId": "proteins_500_resp_000",
+          "targetScorePercent": 0,
+          "expectedScore": 0,
+          "studentAnswer": "Para deixar a proteína mais estável, eu desnaturaria ela primeiro, porque proteína aberta fica mais forte. A sequência de aminoácidos não importa muito para o dobramento."
+        },
+        {
+          "responseId": "proteins_500_resp_025",
+          "targetScorePercent": 25,
+          "expectedScore": 2.5,
+          "studentAnswer": "Eu trocaria alguns aminoácidos para a proteína ficar mais estável. Talvez colocaria ligações mais fortes, como pontes dissulfeto, mas não sei onde nem como isso afetaria a estrutura."
+        },
+        {
+          "responseId": "proteins_500_resp_050",
+          "targetScorePercent": 50,
+          "expectedScore": 5,
+          "studentAnswer": "Uma estratégia seria colocar cisteínas para formar ponte dissulfeto e deixar a proteína mais presa. Isso ajudaria a estabilidade da estrutura terciária. Também existem interações hidrofóbicas, mas não expliquei muito a diferença entre estrutura primária, secundária e terciária."
+        },
+        {
+          "responseId": "proteins_500_resp_075",
+          "targetScorePercent": 75,
+          "expectedScore": 7.5,
+          "studentAnswer": "Eu tentaria aumentar interações que estabilizam a estrutura terciária, como uma ponte dissulfeto entre cisteínas ou interações hidrofóbicas no interior da proteína. A estrutura primária define a sequência e influencia o dobramento; a secundária inclui hélices e folhas. Faltaria detalhar melhor como escolher as posições das mutações."
+        },
+        {
+          "responseId": "proteins_500_resp_100",
+          "targetScorePercent": 100,
+          "expectedScore": 10,
+          "studentAnswer": "Eu proporia introduzir duas cisteínas em posições próximas no dobramento para formar uma ponte dissulfeto, ou reforçar o núcleo hidrofóbico com resíduos apolares adequados. A estrutura primária, isto é, a sequência de aminoácidos, condiciona estruturas secundárias e o dobramento terciário. Pontes dissulfeto, interações hidrofóbicas, ligações de hidrogênio e pontes salinas podem estabilizar a conformação. Assim, a modificação aumentaria estabilidade por reforçar interações específicas, não apenas por aumentar o tamanho da proteína."
+        }
+      ]
+    },
+    {
+      "questionGlobalId": "water_200",
+      "responses": [
+        {
+          "responseId": "water_200_resp_000",
+          "targetScorePercent": 0,
+          "expectedScore": 0,
+          "studentAnswer": "A água é apolar, então não tem ligações de hidrogênio importantes. Se quebrar essas ligações, a molécula de água separa oxigênio e hidrogênio e vira outro elemento."
+        },
+        {
+          "responseId": "water_200_resp_025",
+          "targetScorePercent": 25,
+          "expectedScore": 2.5,
+          "studentAnswer": "As ligações de hidrogênio são importantes para a água. Se elas diminuíssem, alguma propriedade mudaria, talvez a tensão superficial, mas não sei explicar muito bem o motivo."
+        },
+        {
+          "responseId": "water_200_resp_050",
+          "targetScorePercent": 50,
+          "expectedScore": 5,
+          "studentAnswer": "Eu escolheria a tensão superficial. Ela depende das ligações de hidrogênio entre moléculas de água, então se essas interações fossem quebradas, a tensão superficial diminuiria. Não expliquei muito a polaridade nem a consequência biológica."
+        },
+        {
+          "responseId": "water_200_resp_075",
+          "targetScorePercent": 75,
+          "expectedScore": 7.5,
+          "studentAnswer": "Eu analisaria o alto calor específico da água. Como moléculas de água formam ligações de hidrogênio por causa da polaridade, muita energia é necessária para alterar sua temperatura. Se essas interações enfraquecessem, a água resistiria menos a mudanças térmicas, afetando a estabilidade de ambientes biológicos. Faltou explicar melhor a rede completa de interações."
+        },
+        {
+          "responseId": "water_200_resp_100",
+          "targetScorePercent": 100,
+          "expectedScore": 10,
+          "studentAnswer": "Eu escolheria o alto calor específico. A água é polar: o oxigênio tem carga parcial negativa e os hidrogênios têm carga parcial positiva, permitindo ligações de hidrogênio entre moléculas. Essa rede de interações exige energia para ser rompida, ajudando a água a resistir a variações bruscas de temperatura. Se as ligações de hidrogênio fossem enfraquecidas, o calor específico diminuiria e organismos ou ambientes aquosos teriam menor estabilidade térmica."
+        }
+      ]
+    }
+  ]
+}

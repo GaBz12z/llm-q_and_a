@@ -1,0 +1,1431 @@
+{
+  "schemaVersion": "open-answer-rubric-simulation-v1",
+  "createdFor": "BioBlocks IC - validação externa de correção assistida de respostas abertas",
+  "notes": [
+    "Arquivo gerado para simulações fora do Unity; nenhum arquivo de banco atual foi alterado.",
+    "Cada item segue o modelo Question atual com campos adicionais openAnswerRubric e questionType Open para estudo.",
+    "answers contém uma resposta-modelo interna, não alternativas apresentadas ao aluno."
+  ],
+  "questions": [
+    {
+      "sourceFile": "AcidBaseBufferQuestionDataBase.cs",
+      "globalId": "acidsBase_300",
+      "questionDatabankName": "AcidBaseBufferQuestionDatabase",
+      "topic": "acidsBase",
+      "subtopic": "buffers",
+      "displayName": "Ácidos, Bases e Tampões",
+      "questionText": "Você precisa criar uma solução tampão para manter o pH próximo de 7,4 durante uma atividade celular simulada. Proponha um sistema tampão adequado e explique como ele resistiria à adição de pequenas quantidades de ácido ou base.",
+      "answers": [
+        "Uma resposta adequada poderia propor o sistema ácido carbônico/bicarbonato ou outro par ácido fraco/base conjugada com pKa próximo ao pH desejado. A justificativa deve explicar que o componente básico consome H+ adicionado, enquanto o componente ácido neutraliza OH- adicionado, reduzindo variações bruscas de pH. Também deve relacionar a eficiência do tampão à presença simultânea do ácido fraco e de sua base conjugada, preferencialmente em proporções adequadas ao pH alvo."
+      ],
+      "correctIndex": -1,
+      "questionNumber": 300,
+      "answerType": "TextField",
+      "questionType": "Open",
+      "questionImagePath": "",
+      "questionLevel": 6,
+      "questionInDevelopment": true,
+      "bloomLevel": "Create",
+      "conceptTags": [
+        "buffers",
+        "conjugate_acid_base_pairs",
+        "ph_scale",
+        "henderson_hasselbalch",
+        "blood_buffer_system"
+      ],
+      "prerequisites": [
+        "acid_base_strength",
+        "ph_scale",
+        "conjugate_acid_base_pairs"
+      ],
+      "questionHint": {
+        "text": "Pense em um ácido fraco e sua base conjugada. Um bom tampão deve reagir tanto com H+ quanto com OH-.",
+        "imagePath": null,
+        "videoUrl": null,
+        "link": null
+      },
+      "openAnswerRubric": {
+        "maxScore": 10,
+        "requiredConcepts": [
+          {
+            "id": "REQ-001",
+            "description": "Propõe um sistema tampão composto por ácido fraco e base conjugada, adequado ao pH alvo.",
+            "weight": 2.5,
+            "examples": [
+              "bicarbonato/ácido carbônico",
+              "fosfato monoácido/fosfato diácido",
+              "ácido fraco e sua base conjugada com pKa próximo de 7,4"
+            ]
+          },
+          {
+            "id": "REQ-002",
+            "description": "Explica que o componente básico do tampão consome H+ adicionado.",
+            "weight": 2,
+            "examples": [
+              "o bicarbonato reage com H+",
+              "a base conjugada neutraliza ácido adicionado"
+            ]
+          },
+          {
+            "id": "REQ-003",
+            "description": "Explica que o componente ácido do tampão neutraliza OH- ou base adicionada.",
+            "weight": 2,
+            "examples": [
+              "o ácido fraco doa prótons para neutralizar OH-",
+              "o ácido carbônico reage quando há adição de base"
+            ]
+          },
+          {
+            "id": "REQ-004",
+            "description": "Relaciona a eficiência do tampão ao pKa próximo ao pH desejado ou à proporção entre ácido e base conjugada.",
+            "weight": 2,
+            "examples": [
+              "pKa próximo de 7,4",
+              "relação ácido/base ajustada pelo Henderson-Hasselbalch"
+            ]
+          },
+          {
+            "id": "REQ-005",
+            "description": "Conecta a manutenção do pH à estabilidade de processos celulares ou biomoléculas.",
+            "weight": 1.5,
+            "examples": [
+              "mantém proteínas funcionais",
+              "evita alterações bruscas no ambiente celular"
+            ]
+          }
+        ],
+        "partialConcepts": [
+          {
+            "id": "PAR-001",
+            "description": "Menciona tampão como solução que resiste a variações de pH, mas não descreve claramente o par ácido/base.",
+            "weight": 1,
+            "examples": [
+              "um tampão impede mudanças de pH",
+              "a solução mantém o pH estável"
+            ]
+          },
+          {
+            "id": "PAR-002",
+            "description": "Cita um sistema biológico correto, mas não explica como ele reage a ácido e base.",
+            "weight": 1,
+            "examples": [
+              "bicarbonato mantém o pH do sangue",
+              "fosfato atua como tampão"
+            ]
+          },
+          {
+            "id": "PAR-003",
+            "description": "Usa corretamente a ideia de neutralização, mas sem distinguir ácido fraco e base conjugada.",
+            "weight": 0.75,
+            "examples": [
+              "neutraliza ácidos e bases adicionados"
+            ]
+          }
+        ],
+        "misconceptions": [
+          {
+            "id": "MIS-001",
+            "description": "Afirma que tampão mantém pH fixo e imutável independentemente da quantidade de ácido ou base adicionada.",
+            "weight": -1.5,
+            "examples": [
+              "o pH nunca muda",
+              "qualquer quantidade de ácido não altera o pH"
+            ]
+          },
+          {
+            "id": "MIS-002",
+            "description": "Propõe apenas ácido forte ou base forte como sistema tampão.",
+            "weight": -2,
+            "examples": [
+              "usaria HCl e NaOH como tampão",
+              "uma base forte sozinha mantém o pH"
+            ]
+          },
+          {
+            "id": "MIS-003",
+            "description": "Confunde pH neutro com pH fisiológico e assume que todo tampão deve ter pH 7,0.",
+            "weight": -1,
+            "examples": [
+              "tem que ser pH 7 porque todo meio biológico é neutro"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "sourceFile": "AminoacidQuestionDataBase.cs",
+      "globalId": "aminoacids_400",
+      "questionDatabankName": "AminoacidQuestionDatabase",
+      "topic": "aminoacids",
+      "subtopic": "acidic_amino_acids",
+      "displayName": "Aminoácidos e peptídeos",
+      "questionText": "Crie uma proposta de peptídeo curto, com 4 a 6 resíduos, capaz de interagir com uma região positivamente carregada de uma proteína. Justifique a escolha dos aminoácidos com base nas propriedades das cadeias laterais.",
+      "answers": [
+        "Uma resposta adequada poderia propor uma sequência como Glu-Asp-Gly-Ser-Asp. Glutamato e aspartato possuem cadeias laterais ácidas, geralmente carregadas negativamente em pH fisiológico, favorecendo interações eletrostáticas com uma região positiva. Glicina pode conferir flexibilidade e serina pode contribuir com interações polares. A justificativa deve relacionar a composição do peptídeo à função pretendida."
+      ],
+      "correctIndex": -1,
+      "questionNumber": 400,
+      "answerType": "TextField",
+      "questionType": "Open",
+      "questionImagePath": "",
+      "questionLevel": 6,
+      "questionInDevelopment": true,
+      "bloomLevel": "Create",
+      "conceptTags": [
+        "amino_acid_charge",
+        "acidic_amino_acids",
+        "peptides",
+        "side_chain_properties",
+        "protein_interactions"
+      ],
+      "prerequisites": [
+        "amino_acid_structure",
+        "side_chain_classification",
+        "peptide_bond"
+      ],
+      "questionHint": {
+        "text": "Uma região positiva tende a interagir melhor com resíduos de carga negativa, como aminoácidos ácidos.",
+        "imagePath": null,
+        "videoUrl": null,
+        "link": null
+      },
+      "openAnswerRubric": {
+        "maxScore": 10,
+        "requiredConcepts": [
+          {
+            "id": "REQ-001",
+            "description": "Cria uma sequência peptídica curta contendo entre 4 e 6 aminoácidos.",
+            "weight": 1.5,
+            "examples": [
+              "Glu-Asp-Gly-Ser",
+              "Asp-Glu-Asp-Gly-Ser",
+              "Glu-Asp-Ser-Thr-Gly"
+            ]
+          },
+          {
+            "id": "REQ-002",
+            "description": "Inclui aminoácidos ácidos ou negativamente carregados, como aspartato e glutamato.",
+            "weight": 2.5,
+            "examples": [
+              "usei Asp e Glu",
+              "aspartato e glutamato têm carga negativa"
+            ]
+          },
+          {
+            "id": "REQ-003",
+            "description": "Justifica a interação com a região positiva por atração eletrostática entre cargas opostas.",
+            "weight": 2.5,
+            "examples": [
+              "resíduos negativos atraem a região positiva",
+              "cargas opostas favorecem a ligação"
+            ]
+          },
+          {
+            "id": "REQ-004",
+            "description": "Relaciona propriedades das cadeias laterais à função proposta do peptídeo.",
+            "weight": 2,
+            "examples": [
+              "cadeias laterais ácidas",
+              "serina contribui com polaridade",
+              "glicina aumenta flexibilidade"
+            ]
+          },
+          {
+            "id": "REQ-005",
+            "description": "Apresenta uma solução criada e coerente, sem depender de uma única sequência fixa.",
+            "weight": 1.5,
+            "examples": [
+              "a sequência proposta foi planejada para essa interação",
+              "a combinação de resíduos favorece a função"
+            ]
+          }
+        ],
+        "partialConcepts": [
+          {
+            "id": "PAR-001",
+            "description": "Propõe uma sequência, mas com tamanho fora do intervalo solicitado.",
+            "weight": 0.75,
+            "examples": [
+              "Glu-Asp-Ser",
+              "Glu-Asp-Gly-Ser-Thr-Ala-Val"
+            ]
+          },
+          {
+            "id": "PAR-002",
+            "description": "Menciona cargas opostas, mas não identifica corretamente aminoácidos específicos.",
+            "weight": 1,
+            "examples": [
+              "usaria aminoácidos negativos",
+              "colocaria cargas opostas"
+            ]
+          },
+          {
+            "id": "PAR-003",
+            "description": "Cita aminoácidos adequados, mas com justificativa incompleta.",
+            "weight": 1,
+            "examples": [
+              "aspartato combina com a proteína",
+              "glutamato ajuda na ligação"
+            ]
+          }
+        ],
+        "misconceptions": [
+          {
+            "id": "MIS-001",
+            "description": "Escolhe aminoácidos positivos para interagir com uma região positiva sem justificar outra força de interação.",
+            "weight": -1.5,
+            "examples": [
+              "usaria lisina e arginina porque a região é positiva"
+            ]
+          },
+          {
+            "id": "MIS-002",
+            "description": "Confunde aminoácidos com nucleotídeos ou bases nitrogenadas.",
+            "weight": -2,
+            "examples": [
+              "usaria A, T, C e G",
+              "a sequência seria adenina e guanina"
+            ]
+          },
+          {
+            "id": "MIS-003",
+            "description": "Afirma que todos os aminoácidos têm a mesma carga ou a mesma função.",
+            "weight": -1,
+            "examples": [
+              "qualquer aminoácido serve porque todos são iguais"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "sourceFile": "BiochemistryIntroductionQuestionDatabase.cs",
+      "globalId": "biochem_100",
+      "questionDatabankName": "BiochemistryIntroductionQuestionDatabase",
+      "topic": "biochem",
+      "subtopic": "physicochemical_properties",
+      "displayName": "Introdução à Bioquímica",
+      "questionText": "Crie uma explicação integrada para mostrar por que as propriedades físico-químicas das moléculas orgânicas são importantes para a origem e manutenção da vida. Use pelo menos dois exemplos de funções orgânicas ou características estruturais.",
+      "answers": [
+        "Uma resposta adequada deve articular que a vida depende de moléculas orgânicas capazes de formar estruturas estáveis e interações específicas. Grupos funcionais como hidroxila, carboxila, amino e fosfato alteram polaridade, carga, solubilidade e reatividade. Características como isomeria e estereoquímica permitem que moléculas com mesma fórmula tenham funções diferentes. Esses fatores ajudam a explicar reconhecimento molecular, formação de polímeros, catálise e organização celular."
+      ],
+      "correctIndex": -1,
+      "questionNumber": 100,
+      "answerType": "TextField",
+      "questionType": "Open",
+      "questionImagePath": "",
+      "questionLevel": 6,
+      "questionInDevelopment": true,
+      "bloomLevel": "Create",
+      "conceptTags": [
+        "organic_function",
+        "organic_structure",
+        "stereochemistry",
+        "isomerism",
+        "physicochemical_properties"
+      ],
+      "prerequisites": [
+        "organic_function",
+        "organic_structure",
+        "polarity"
+      ],
+      "questionHint": {
+        "text": "Pense em como grupos funcionais mudam solubilidade, carga, reatividade e reconhecimento molecular.",
+        "imagePath": null,
+        "videoUrl": null,
+        "link": null
+      },
+      "openAnswerRubric": {
+        "maxScore": 10,
+        "requiredConcepts": [
+          {
+            "id": "REQ-001",
+            "description": "Constrói uma explicação integrada, não apenas uma lista isolada de conceitos.",
+            "weight": 1.5,
+            "examples": [
+              "relaciona estrutura, propriedades e vida",
+              "conecta moléculas orgânicas a processos biológicos"
+            ]
+          },
+          {
+            "id": "REQ-002",
+            "description": "Explica que grupos funcionais alteram propriedades como polaridade, carga, solubilidade ou reatividade.",
+            "weight": 2.5,
+            "examples": [
+              "hidroxila aumenta polaridade",
+              "carboxila pode ter carga negativa",
+              "amino pode atuar como base"
+            ]
+          },
+          {
+            "id": "REQ-003",
+            "description": "Usa pelo menos dois exemplos corretos de funções orgânicas ou características estruturais.",
+            "weight": 2,
+            "examples": [
+              "hidroxila e carboxila",
+              "amino e fosfato",
+              "isomeria e estereoquímica"
+            ]
+          },
+          {
+            "id": "REQ-004",
+            "description": "Relaciona propriedades moleculares a processos biológicos, como reconhecimento, catálise, formação de polímeros ou organização celular.",
+            "weight": 2.5,
+            "examples": [
+              "enzimas reconhecem formas específicas",
+              "polímeros dependem de ligações covalentes",
+              "polaridade afeta solubilidade"
+            ]
+          },
+          {
+            "id": "REQ-005",
+            "description": "Inclui uma ideia de relevância para origem ou manutenção da vida.",
+            "weight": 1.5,
+            "examples": [
+              "permitiu moléculas estáveis e reativas",
+              "favoreceu organização de sistemas biológicos"
+            ]
+          }
+        ],
+        "partialConcepts": [
+          {
+            "id": "PAR-001",
+            "description": "Menciona grupos funcionais, mas sem explicar suas consequências físico-químicas.",
+            "weight": 1,
+            "examples": [
+              "existem grupos hidroxila, amino e carboxila"
+            ]
+          },
+          {
+            "id": "PAR-002",
+            "description": "Relaciona moléculas orgânicas à vida de forma genérica.",
+            "weight": 0.75,
+            "examples": [
+              "moléculas orgânicas são importantes para os seres vivos"
+            ]
+          },
+          {
+            "id": "PAR-003",
+            "description": "Cita propriedades físico-químicas sem exemplos concretos.",
+            "weight": 0.75,
+            "examples": [
+              "as propriedades mudam a função"
+            ]
+          }
+        ],
+        "misconceptions": [
+          {
+            "id": "MIS-001",
+            "description": "Afirma que moléculas com a mesma fórmula sempre têm a mesma função, ignorando isomeria ou estereoquímica.",
+            "weight": -1.5,
+            "examples": [
+              "se tem a mesma fórmula, funciona igual"
+            ]
+          },
+          {
+            "id": "MIS-002",
+            "description": "Afirma que grupos funcionais não interferem nas propriedades das moléculas.",
+            "weight": -2,
+            "examples": [
+              "o grupo funcional não muda solubilidade nem reatividade"
+            ]
+          },
+          {
+            "id": "MIS-003",
+            "description": "Confunde moléculas orgânicas com moléculas necessariamente vivas ou conscientes.",
+            "weight": -1,
+            "examples": [
+              "uma molécula orgânica está viva"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "sourceFile": "CarbohydratesQuestionDataBase.cs",
+      "globalId": "carbohydrates_800",
+      "questionDatabankName": "CarbohydratesQuestionDatabase",
+      "topic": "carbohydrates",
+      "subtopic": "glycosidic_bond",
+      "displayName": "Carboidratos",
+      "questionText": "Crie um modelo explicativo para diferenciar um carboidrato de reserva energética de um carboidrato estrutural. Use a composição, o tipo de ligação glicosídica e a consequência funcional dessas diferenças.",
+      "answers": [
+        "Uma resposta adequada pode comparar amido ou glicogênio com celulose. Amido e glicogênio são polímeros de glicose com ligações alfa, que favorecem estruturas mais acessíveis à digestão e mobilização de energia. Celulose é formada por glicose com ligações beta-1,4, gerando fibras lineares estabilizadas por interações entre cadeias, com função estrutural. A resposta deve relacionar tipo de ligação, arquitetura do polímero e função biológica."
+      ],
+      "correctIndex": -1,
+      "questionNumber": 800,
+      "answerType": "TextField",
+      "questionType": "Open",
+      "questionImagePath": "",
+      "questionLevel": 6,
+      "questionInDevelopment": true,
+      "bloomLevel": "Create",
+      "conceptTags": [
+        "storage_polysaccharides",
+        "structural_polysaccharides",
+        "glycosidic_bond",
+        "polysaccharide_structure",
+        "carbohydrate_functions"
+      ],
+      "prerequisites": [
+        "monosaccharides",
+        "glycosidic_bond",
+        "polysaccharide_classification"
+      ],
+      "questionHint": {
+        "text": "Compare amido/glicogênio com celulose e pense em como ligações alfa ou beta mudam a forma e a função do polímero.",
+        "imagePath": null,
+        "videoUrl": null,
+        "link": null
+      },
+      "openAnswerRubric": {
+        "maxScore": 10,
+        "requiredConcepts": [
+          {
+            "id": "REQ-001",
+            "description": "Compara explicitamente um carboidrato de reserva com um carboidrato estrutural.",
+            "weight": 1.5,
+            "examples": [
+              "amido versus celulose",
+              "glicogênio versus celulose"
+            ]
+          },
+          {
+            "id": "REQ-002",
+            "description": "Identifica que amido/glicogênio são reservas energéticas formadas por glicose.",
+            "weight": 2,
+            "examples": [
+              "amido armazena energia em plantas",
+              "glicogênio armazena energia em animais"
+            ]
+          },
+          {
+            "id": "REQ-003",
+            "description": "Identifica que celulose tem função estrutural.",
+            "weight": 1.5,
+            "examples": [
+              "celulose forma parede celular vegetal",
+              "celulose dá sustentação"
+            ]
+          },
+          {
+            "id": "REQ-004",
+            "description": "Relaciona ligações glicosídicas alfa e beta às diferenças estruturais.",
+            "weight": 2.5,
+            "examples": [
+              "ligações alfa no amido",
+              "ligações beta-1,4 na celulose"
+            ]
+          },
+          {
+            "id": "REQ-005",
+            "description": "Explica como a estrutura afeta digestibilidade, mobilização energética ou resistência mecânica.",
+            "weight": 2.5,
+            "examples": [
+              "ligações alfa são mais acessíveis",
+              "beta-1,4 gera fibras resistentes",
+              "estrutura ramificada facilita mobilização"
+            ]
+          }
+        ],
+        "partialConcepts": [
+          {
+            "id": "PAR-001",
+            "description": "Cita exemplos corretos, mas sem explicar ligação glicosídica.",
+            "weight": 1,
+            "examples": [
+              "amido é reserva e celulose é estrutura"
+            ]
+          },
+          {
+            "id": "PAR-002",
+            "description": "Menciona ligações alfa/beta, mas não conecta à função.",
+            "weight": 1,
+            "examples": [
+              "um tem ligação alfa e outro beta"
+            ]
+          },
+          {
+            "id": "PAR-003",
+            "description": "Explica função energética ou estrutural de forma incompleta.",
+            "weight": 0.75,
+            "examples": [
+              "carboidratos dão energia e estrutura"
+            ]
+          }
+        ],
+        "misconceptions": [
+          {
+            "id": "MIS-001",
+            "description": "Afirma que celulose é a principal reserva energética dos animais.",
+            "weight": -1.5,
+            "examples": [
+              "animais armazenam energia como celulose"
+            ]
+          },
+          {
+            "id": "MIS-002",
+            "description": "Afirma que amido, glicogênio e celulose têm a mesma estrutura e função.",
+            "weight": -2,
+            "examples": [
+              "todos são glicose, então funcionam igual"
+            ]
+          },
+          {
+            "id": "MIS-003",
+            "description": "Confunde ligação glicosídica com ligação peptídica.",
+            "weight": -1,
+            "examples": [
+              "carboidratos são unidos por ligações peptídicas"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "sourceFile": "EnzymeQuestionDataBase.cs",
+      "globalId": "enzymes_550",
+      "questionDatabankName": "EnzymeQuestionDatabase",
+      "topic": "enzymes",
+      "subtopic": "enzyme_inhibition",
+      "displayName": "Enzimas",
+      "questionText": "Crie um experimento simples para distinguir inibição competitiva de inibição não competitiva em uma enzima. Descreva quais condições seriam comparadas e quais resultados indicariam cada tipo de inibição.",
+      "answers": [
+        "Uma resposta adequada deve propor medir a velocidade da reação em diferentes concentrações de substrato, com e sem inibidor. Na inibição competitiva, o aumento de substrato tende a reduzir o efeito do inibidor, com Vmax semelhante e Km aparente aumentado. Na inibição não competitiva, aumentar o substrato não restaura completamente a atividade, com Vmax reduzida e Km pouco alterado em um caso ideal. A resposta deve comparar condições experimentais e interpretar os resultados."
+      ],
+      "correctIndex": -1,
+      "questionNumber": 550,
+      "answerType": "TextField",
+      "questionType": "Open",
+      "questionImagePath": "",
+      "questionLevel": 6,
+      "questionInDevelopment": true,
+      "bloomLevel": "Create",
+      "conceptTags": [
+        "enzyme_inhibition",
+        "competitive_inhibition",
+        "noncompetitive_inhibition",
+        "michaelis_menten_kinetics",
+        "km",
+        "vmax"
+      ],
+      "prerequisites": [
+        "enzyme_catalysis",
+        "active_site",
+        "enzyme_kinetics_plots"
+      ],
+      "questionHint": {
+        "text": "Pense no que acontece quando você aumenta a concentração de substrato na presença de cada tipo de inibidor.",
+        "imagePath": null,
+        "videoUrl": null,
+        "link": null
+      },
+      "openAnswerRubric": {
+        "maxScore": 10,
+        "requiredConcepts": [
+          {
+            "id": "REQ-001",
+            "description": "Propõe comparar atividade enzimática com e sem inibidor.",
+            "weight": 1.5,
+            "examples": [
+              "controle sem inibidor e teste com inibidor"
+            ]
+          },
+          {
+            "id": "REQ-002",
+            "description": "Inclui variação da concentração de substrato como parte do experimento.",
+            "weight": 2,
+            "examples": [
+              "testaria várias concentrações de substrato",
+              "aumentaria o substrato progressivamente"
+            ]
+          },
+          {
+            "id": "REQ-003",
+            "description": "Descreve o padrão esperado para inibição competitiva.",
+            "weight": 2.5,
+            "examples": [
+              "substrato compete com o inibidor",
+              "Km aparente aumenta",
+              "Vmax pode ser alcançada"
+            ]
+          },
+          {
+            "id": "REQ-004",
+            "description": "Descreve o padrão esperado para inibição não competitiva.",
+            "weight": 2.5,
+            "examples": [
+              "Vmax diminui",
+              "aumentar substrato não reverte totalmente",
+              "Km fica pouco alterado no caso ideal"
+            ]
+          },
+          {
+            "id": "REQ-005",
+            "description": "Interpreta os resultados para distinguir os dois mecanismos.",
+            "weight": 1.5,
+            "examples": [
+              "se o substrato reverte, é competitiva; se não reverte, é não competitiva"
+            ]
+          }
+        ],
+        "partialConcepts": [
+          {
+            "id": "PAR-001",
+            "description": "Menciona inibidor e substrato, mas sem desenho experimental claro.",
+            "weight": 1,
+            "examples": [
+              "testaria enzima com substrato e inibidor"
+            ]
+          },
+          {
+            "id": "PAR-002",
+            "description": "Diferencia os tipos de inibição conceitualmente, mas não indica resultados esperados.",
+            "weight": 1,
+            "examples": [
+              "competitivo liga no sítio ativo e não competitivo em outro local"
+            ]
+          },
+          {
+            "id": "PAR-003",
+            "description": "Cita Km ou Vmax, mas com explicação incompleta.",
+            "weight": 0.75,
+            "examples": [
+              "olharia Km e Vmax"
+            ]
+          }
+        ],
+        "misconceptions": [
+          {
+            "id": "MIS-001",
+            "description": "Afirma que aumentar substrato sempre reverte qualquer inibição.",
+            "weight": -1.5,
+            "examples": [
+              "mais substrato resolve toda inibição"
+            ]
+          },
+          {
+            "id": "MIS-002",
+            "description": "Confunde inibição competitiva com desnaturação irreversível da enzima.",
+            "weight": -1.5,
+            "examples": [
+              "o inibidor competitivo destrói a enzima"
+            ]
+          },
+          {
+            "id": "MIS-003",
+            "description": "Afirma que inibidor não competitivo ocupa obrigatoriamente o sítio ativo.",
+            "weight": -1,
+            "examples": [
+              "não competitivo compete pelo sítio ativo"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "sourceFile": "LipidsQuestionDataBase.cs",
+      "globalId": "lipids_600",
+      "questionDatabankName": "LipidsQuestionDatabase",
+      "topic": "lipids",
+      "subtopic": "amphipathic_molecules",
+      "displayName": "Lipídeos",
+      "questionText": "Crie uma explicação para prever como uma molécula lipídica anfipática se organizaria em água. Use as regiões hidrofílica e hidrofóbica da molécula e relacione essa organização à formação de estruturas biológicas.",
+      "answers": [
+        "Uma resposta adequada deve explicar que moléculas anfipáticas possuem uma região polar ou carregada, que interage com a água, e uma região apolar, que evita contato com a água. Em meio aquoso, essas moléculas podem formar micelas ou bicamadas, com cabeças hidrofílicas voltadas para a água e caudas hidrofóbicas protegidas no interior. Essa propriedade contribui para a formação de membranas biológicas."
+      ],
+      "correctIndex": -1,
+      "questionNumber": 600,
+      "answerType": "TextField",
+      "questionType": "Open",
+      "questionImagePath": "",
+      "questionLevel": 6,
+      "questionInDevelopment": true,
+      "bloomLevel": "Create",
+      "conceptTags": [
+        "amphipathic_molecules",
+        "hydrophobicity",
+        "hydrophobic_interactions",
+        "phospholipids",
+        "lipid_functions"
+      ],
+      "prerequisites": [
+        "lipid_properties",
+        "hydrophobicity",
+        "polarity"
+      ],
+      "questionHint": {
+        "text": "Moléculas anfipáticas têm uma parte que interage com água e outra que evita água.",
+        "imagePath": null,
+        "videoUrl": null,
+        "link": null
+      },
+      "openAnswerRubric": {
+        "maxScore": 10,
+        "requiredConcepts": [
+          {
+            "id": "REQ-001",
+            "description": "Define ou utiliza corretamente a ideia de molécula anfipática.",
+            "weight": 2,
+            "examples": [
+              "tem parte hidrofílica e parte hidrofóbica",
+              "possui cabeça polar e cauda apolar"
+            ]
+          },
+          {
+            "id": "REQ-002",
+            "description": "Explica que a região hidrofílica interage com a água.",
+            "weight": 2,
+            "examples": [
+              "cabeças polares ficam voltadas para água"
+            ]
+          },
+          {
+            "id": "REQ-003",
+            "description": "Explica que a região hidrofóbica evita contato com a água.",
+            "weight": 2,
+            "examples": [
+              "caudas apolares ficam protegidas no interior"
+            ]
+          },
+          {
+            "id": "REQ-004",
+            "description": "Prevê uma organização supramolecular adequada, como micela ou bicamada.",
+            "weight": 2,
+            "examples": [
+              "formaria micelas",
+              "formaria bicamada lipídica"
+            ]
+          },
+          {
+            "id": "REQ-005",
+            "description": "Relaciona a organização à formação ou função de estruturas biológicas.",
+            "weight": 2,
+            "examples": [
+              "essa propriedade permite membranas celulares",
+              "bicamadas delimitam compartimentos celulares"
+            ]
+          }
+        ],
+        "partialConcepts": [
+          {
+            "id": "PAR-001",
+            "description": "Menciona hidrofóbico e hidrofílico, mas sem explicar a organização em água.",
+            "weight": 1,
+            "examples": [
+              "tem uma parte que gosta de água e outra que não gosta"
+            ]
+          },
+          {
+            "id": "PAR-002",
+            "description": "Cita membranas, mas não relaciona às regiões da molécula.",
+            "weight": 0.75,
+            "examples": [
+              "lipídeos formam membranas"
+            ]
+          },
+          {
+            "id": "PAR-003",
+            "description": "Descreve micelas ou bicamadas sem explicar a força hidrofóbica.",
+            "weight": 0.75,
+            "examples": [
+              "elas formam esferas ou camadas"
+            ]
+          }
+        ],
+        "misconceptions": [
+          {
+            "id": "MIS-001",
+            "description": "Afirma que a parte hidrofóbica se dissolve favoravelmente em água.",
+            "weight": -1.5,
+            "examples": [
+              "a cauda apolar gosta de água"
+            ]
+          },
+          {
+            "id": "MIS-002",
+            "description": "Afirma que lipídeos anfipáticos ficam totalmente dispersos sem organização em água.",
+            "weight": -1.5,
+            "examples": [
+              "ficam soltos igualmente na água"
+            ]
+          },
+          {
+            "id": "MIS-003",
+            "description": "Confunde moléculas anfipáticas com moléculas completamente insolúveis sem região polar.",
+            "weight": -1,
+            "examples": [
+              "anfipático significa só hidrofóbico"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "sourceFile": "MembranesQuestionDatabase.cs",
+      "globalId": "membranes_700",
+      "questionDatabankName": "MembranesQuestionDatabase",
+      "topic": "membranes",
+      "subtopic": "membrane_fluidity",
+      "displayName": "Membranas Biológicas",
+      "questionText": "Crie uma proposta de alteração na composição lipídica de uma membrana para manter sua fluidez em baixa temperatura. Justifique usando saturação dos ácidos graxos, colesterol e organização da bicamada.",
+      "answers": [
+        "Uma resposta adequada pode propor aumentar a proporção de ácidos graxos insaturados, pois suas duplas ligações introduzem dobras que dificultam o empacotamento das caudas lipídicas, ajudando a manter a fluidez em baixa temperatura. Também pode discutir o papel modulador do colesterol, que evita empacotamento excessivo em certas condições. A justificativa deve conectar composição lipídica, empacotamento da bicamada e fluidez."
+      ],
+      "correctIndex": -1,
+      "questionNumber": 700,
+      "answerType": "TextField",
+      "questionType": "Open",
+      "questionImagePath": "",
+      "questionLevel": 6,
+      "questionInDevelopment": true,
+      "bloomLevel": "Create",
+      "conceptTags": [
+        "membrane_fluidity",
+        "membrane_lipids",
+        "cholesterol",
+        "lipid_bilayer",
+        "unsaturated_fatty_acids"
+      ],
+      "prerequisites": [
+        "phospholipids",
+        "lipid_bilayer",
+        "saturated_fatty_acids"
+      ],
+      "questionHint": {
+        "text": "Em baixa temperatura, caudas muito empacotadas reduzem a fluidez. Pense no efeito de insaturações e colesterol.",
+        "imagePath": null,
+        "videoUrl": null,
+        "link": null
+      },
+      "openAnswerRubric": {
+        "maxScore": 10,
+        "requiredConcepts": [
+          {
+            "id": "REQ-001",
+            "description": "Propõe uma alteração concreta na composição lipídica da membrana.",
+            "weight": 1.5,
+            "examples": [
+              "aumentaria lipídeos insaturados",
+              "modularia colesterol",
+              "reduziria caudas saturadas longas"
+            ]
+          },
+          {
+            "id": "REQ-002",
+            "description": "Explica que ácidos graxos insaturados reduzem empacotamento e favorecem fluidez.",
+            "weight": 2.5,
+            "examples": [
+              "duplas ligações geram dobras",
+              "insaturações dificultam empacotamento"
+            ]
+          },
+          {
+            "id": "REQ-003",
+            "description": "Relaciona baixa temperatura à tendência de menor fluidez ou maior ordenação da membrana.",
+            "weight": 2,
+            "examples": [
+              "frio reduz movimento dos lipídeos",
+              "baixa temperatura torna a membrana mais rígida"
+            ]
+          },
+          {
+            "id": "REQ-004",
+            "description": "Discute o papel do colesterol como modulador da fluidez.",
+            "weight": 2,
+            "examples": [
+              "colesterol evita empacotamento excessivo",
+              "colesterol regula fluidez"
+            ]
+          },
+          {
+            "id": "REQ-005",
+            "description": "Conecta composição, organização da bicamada e função da membrana.",
+            "weight": 2,
+            "examples": [
+              "manter fluidez ajuda transporte e função de proteínas de membrana"
+            ]
+          }
+        ],
+        "partialConcepts": [
+          {
+            "id": "PAR-001",
+            "description": "Menciona aumentar fluidez, mas sem propor alteração molecular específica.",
+            "weight": 0.75,
+            "examples": [
+              "mudaria a membrana para ficar mais fluida"
+            ]
+          },
+          {
+            "id": "PAR-002",
+            "description": "Cita insaturação, mas não explica empacotamento.",
+            "weight": 1,
+            "examples": [
+              "usaria ácidos graxos insaturados"
+            ]
+          },
+          {
+            "id": "PAR-003",
+            "description": "Cita colesterol, mas sem papel claro.",
+            "weight": 0.75,
+            "examples": [
+              "colesterol participa da membrana"
+            ]
+          }
+        ],
+        "misconceptions": [
+          {
+            "id": "MIS-001",
+            "description": "Afirma que aumentar ácidos graxos saturados sempre aumenta fluidez em baixa temperatura.",
+            "weight": -1.5,
+            "examples": [
+              "mais saturados deixam a membrana mais fluida no frio"
+            ]
+          },
+          {
+            "id": "MIS-002",
+            "description": "Afirma que temperatura não afeta a fluidez da membrana.",
+            "weight": -1.5,
+            "examples": [
+              "a temperatura não muda a membrana"
+            ]
+          },
+          {
+            "id": "MIS-003",
+            "description": "Afirma que colesterol é sempre ausente ou irrelevante em membranas animais.",
+            "weight": -1,
+            "examples": [
+              "colesterol não tem função em membranas"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "sourceFile": "NucleicAcidsQuestionDataBase.cs",
+      "globalId": "nucleicAcids_900",
+      "questionDatabankName": "NucleicAcidsQuestionDatabase",
+      "topic": "nucleicAcids",
+      "subtopic": "central_dogma",
+      "displayName": "Ácidos Nucleicos",
+      "questionText": "Crie um esquema textual para explicar como a informação genética armazenada no DNA pode resultar na produção de uma proteína. Inclua as etapas principais e o papel de DNA, RNA e código genético.",
+      "answers": [
+        "Uma resposta adequada deve organizar o fluxo DNA -> RNA -> proteína. O DNA armazena a informação genética na sequência de bases. Na transcrição, uma molécula de RNA é sintetizada a partir de uma região do DNA. Na tradução, a sequência de códons do RNA mensageiro é lida para orientar a incorporação de aminoácidos em uma cadeia polipeptídica. O código genético relaciona códons a aminoácidos."
+      ],
+      "correctIndex": -1,
+      "questionNumber": 900,
+      "answerType": "TextField",
+      "questionType": "Open",
+      "questionImagePath": "",
+      "questionLevel": 6,
+      "questionInDevelopment": true,
+      "bloomLevel": "Create",
+      "conceptTags": [
+        "central_dogma",
+        "dna_function",
+        "transcription",
+        "rna_types",
+        "genetic_code"
+      ],
+      "prerequisites": [
+        "dna_structure",
+        "rna_structure",
+        "base_pairing",
+        "nucleotide_structure"
+      ],
+      "questionHint": {
+        "text": "Organize o caminho da informação: DNA, RNA e proteína. Depois explique o papel dos códons.",
+        "imagePath": null,
+        "videoUrl": null,
+        "link": null
+      },
+      "openAnswerRubric": {
+        "maxScore": 10,
+        "requiredConcepts": [
+          {
+            "id": "REQ-001",
+            "description": "Apresenta um fluxo coerente de informação genética do DNA para RNA e proteína.",
+            "weight": 2,
+            "examples": [
+              "DNA -> RNA -> proteína",
+              "dogma central"
+            ]
+          },
+          {
+            "id": "REQ-002",
+            "description": "Explica que o DNA armazena informação na sequência de bases.",
+            "weight": 2,
+            "examples": [
+              "a sequência de nucleotídeos guarda a informação",
+              "genes no DNA codificam informações"
+            ]
+          },
+          {
+            "id": "REQ-003",
+            "description": "Descreve transcrição como produção de RNA a partir do DNA.",
+            "weight": 2,
+            "examples": [
+              "RNA é sintetizado usando DNA como molde"
+            ]
+          },
+          {
+            "id": "REQ-004",
+            "description": "Descreve tradução como síntese de proteína a partir de códons do RNA mensageiro.",
+            "weight": 2.5,
+            "examples": [
+              "ribossomo lê códons",
+              "códons orientam aminoácidos"
+            ]
+          },
+          {
+            "id": "REQ-005",
+            "description": "Explica o papel do código genético na correspondência entre códons e aminoácidos.",
+            "weight": 1.5,
+            "examples": [
+              "código genético relaciona trincas a aminoácidos"
+            ]
+          }
+        ],
+        "partialConcepts": [
+          {
+            "id": "PAR-001",
+            "description": "Menciona DNA e proteína, mas omite ou confunde o papel do RNA.",
+            "weight": 1,
+            "examples": [
+              "DNA vira proteína"
+            ]
+          },
+          {
+            "id": "PAR-002",
+            "description": "Cita transcrição ou tradução, mas sem diferenciar as etapas.",
+            "weight": 1,
+            "examples": [
+              "acontecem transcrição e tradução"
+            ]
+          },
+          {
+            "id": "PAR-003",
+            "description": "Menciona códons, mas não os relaciona claramente a aminoácidos.",
+            "weight": 0.75,
+            "examples": [
+              "o RNA tem códons"
+            ]
+          }
+        ],
+        "misconceptions": [
+          {
+            "id": "MIS-001",
+            "description": "Afirma que proteínas são feitas diretamente pela cópia do DNA sem RNA ou tradução.",
+            "weight": -1.5,
+            "examples": [
+              "DNA se transforma diretamente em proteína"
+            ]
+          },
+          {
+            "id": "MIS-002",
+            "description": "Confunde aminoácidos com nucleotídeos.",
+            "weight": -2,
+            "examples": [
+              "a proteína é formada por A, T, C e G"
+            ]
+          },
+          {
+            "id": "MIS-003",
+            "description": "Afirma que tradução produz RNA em vez de proteína.",
+            "weight": -1,
+            "examples": [
+              "na tradução o DNA vira RNA"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "sourceFile": "ProteinQuestionDataBase.cs",
+      "globalId": "proteins_500",
+      "questionDatabankName": "ProteinQuestionDatabase",
+      "topic": "proteins",
+      "subtopic": "protein_structure",
+      "displayName": "Proteínas",
+      "questionText": "Crie uma estratégia para modificar uma proteína hipotética a fim de aumentar sua estabilidade estrutural. Justifique usando níveis de estrutura proteica e tipos de interações entre aminoácidos.",
+      "answers": [
+        "Uma resposta adequada pode propor inserir ou preservar interações que estabilizem a estrutura terciária ou quaternária, como pontes dissulfeto entre cisteínas, interações hidrofóbicas no interior da proteína, pontes salinas entre resíduos carregados ou ligações de hidrogênio. A resposta deve diferenciar estrutura primária, secundária e terciária, e relacionar a modificação proposta à estabilidade conformacional."
+      ],
+      "correctIndex": -1,
+      "questionNumber": 500,
+      "answerType": "TextField",
+      "questionType": "Open",
+      "questionImagePath": "",
+      "questionLevel": 6,
+      "questionInDevelopment": true,
+      "bloomLevel": "Create",
+      "conceptTags": [
+        "protein_interactions",
+        "primary_structure",
+        "secondary_structure",
+        "tertiary_structure",
+        "disulfide_bonds"
+      ],
+      "prerequisites": [
+        "amino_acid_structure",
+        "peptide_bond",
+        "protein_structure"
+      ],
+      "questionHint": {
+        "text": "Pense em quais interações mantêm uma proteína dobrada: hidrofóbicas, iônicas, ligações de hidrogênio e pontes dissulfeto.",
+        "imagePath": null,
+        "videoUrl": null,
+        "link": null
+      },
+      "openAnswerRubric": {
+        "maxScore": 10,
+        "requiredConcepts": [
+          {
+            "id": "REQ-001",
+            "description": "Propõe uma modificação concreta para aumentar estabilidade proteica.",
+            "weight": 1.5,
+            "examples": [
+              "adicionaria cisteínas para ponte dissulfeto",
+              "aumentaria interações hidrofóbicas internas",
+              "criaria ponte salina"
+            ]
+          },
+          {
+            "id": "REQ-002",
+            "description": "Relaciona a modificação a interações entre cadeias laterais de aminoácidos.",
+            "weight": 2.5,
+            "examples": [
+              "interação hidrofóbica",
+              "ligação iônica",
+              "ponte dissulfeto",
+              "ligação de hidrogênio"
+            ]
+          },
+          {
+            "id": "REQ-003",
+            "description": "Distingue pelo menos dois níveis de estrutura proteica relevantes.",
+            "weight": 2,
+            "examples": [
+              "primária é sequência; terciária é dobramento",
+              "secundária envolve alfa-hélice ou folha beta"
+            ]
+          },
+          {
+            "id": "REQ-004",
+            "description": "Explica como a interação proposta estabiliza a conformação da proteína.",
+            "weight": 2.5,
+            "examples": [
+              "aproxima regiões da cadeia",
+              "reduz exposição de grupos hidrofóbicos",
+              "mantém o dobramento"
+            ]
+          },
+          {
+            "id": "REQ-005",
+            "description": "Evita tratar estabilidade como simples aumento do tamanho da proteína.",
+            "weight": 1.5,
+            "examples": [
+              "estabilidade depende de interações e dobramento, não só do número de aminoácidos"
+            ]
+          }
+        ],
+        "partialConcepts": [
+          {
+            "id": "PAR-001",
+            "description": "Cita interações estabilizadoras, mas sem propor modificação específica.",
+            "weight": 1,
+            "examples": [
+              "pontes dissulfeto estabilizam proteínas"
+            ]
+          },
+          {
+            "id": "PAR-002",
+            "description": "Menciona níveis estruturais, mas sem conectá-los à estabilidade.",
+            "weight": 0.75,
+            "examples": [
+              "proteínas têm estrutura primária, secundária e terciária"
+            ]
+          },
+          {
+            "id": "PAR-003",
+            "description": "Propõe trocar aminoácidos, mas justifica de forma incompleta.",
+            "weight": 1,
+            "examples": [
+              "mudaria aminoácidos para melhorar a estrutura"
+            ]
+          }
+        ],
+        "misconceptions": [
+          {
+            "id": "MIS-001",
+            "description": "Afirma que a estrutura primária não influencia a estrutura final da proteína.",
+            "weight": -1.5,
+            "examples": [
+              "a sequência não importa para o dobramento"
+            ]
+          },
+          {
+            "id": "MIS-002",
+            "description": "Confunde ligação peptídica com ponte dissulfeto.",
+            "weight": -1.5,
+            "examples": [
+              "ponte dissulfeto é a ligação que une todos os aminoácidos"
+            ]
+          },
+          {
+            "id": "MIS-003",
+            "description": "Afirma que desnaturação sempre aumenta estabilidade.",
+            "weight": -1,
+            "examples": [
+              "desnaturar deixaria a proteína mais estável"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "sourceFile": "WaterQuestionDataBase.cs",
+      "globalId": "water_200",
+      "questionDatabankName": "WaterQuestionDatabase",
+      "topic": "water",
+      "subtopic": "hydrogen_bonding",
+      "displayName": "Água",
+      "questionText": "Crie uma explicação para prever como a quebra de ligações de hidrogênio entre moléculas de água afetaria uma propriedade biológica ou físico-química importante. Escolha uma propriedade e justifique sua previsão.",
+      "answers": [
+        "Uma resposta adequada deve escolher uma propriedade, como alto calor específico, tensão superficial, coesão, solubilidade de substâncias polares ou anomalia da densidade. Deve explicar que as ligações de hidrogênio entre moléculas de água estabilizam uma rede de interações. Se essas interações forem enfraquecidas, propriedades dependentes dessa rede também diminuem, afetando, por exemplo, controle térmico, capilaridade, organização de soluções ou comportamento do gelo."
+      ],
+      "correctIndex": -1,
+      "questionNumber": 200,
+      "answerType": "TextField",
+      "questionType": "Open",
+      "questionImagePath": "",
+      "questionLevel": 6,
+      "questionInDevelopment": true,
+      "bloomLevel": "Create",
+      "conceptTags": [
+        "hydrogen_bonding",
+        "thermal_properties",
+        "surface_tension",
+        "cohesion_adhesion",
+        "water_in_biology"
+      ],
+      "prerequisites": [
+        "polarity",
+        "water_structure",
+        "phase_properties"
+      ],
+      "questionHint": {
+        "text": "Escolha uma propriedade da água e pergunte: ela depende da rede de ligações de hidrogênio?",
+        "imagePath": null,
+        "videoUrl": null,
+        "link": null
+      },
+      "openAnswerRubric": {
+        "maxScore": 10,
+        "requiredConcepts": [
+          {
+            "id": "REQ-001",
+            "description": "Escolhe uma propriedade específica da água para analisar.",
+            "weight": 1.5,
+            "examples": [
+              "alto calor específico",
+              "tensão superficial",
+              "coesão",
+              "densidade do gelo",
+              "solubilidade"
+            ]
+          },
+          {
+            "id": "REQ-002",
+            "description": "Explica que ligações de hidrogênio ocorrem entre moléculas de água devido à polaridade.",
+            "weight": 2,
+            "examples": [
+              "oxigênio parcialmente negativo e hidrogênios parcialmente positivos",
+              "a polaridade permite ligações de hidrogênio"
+            ]
+          },
+          {
+            "id": "REQ-003",
+            "description": "Relaciona a propriedade escolhida à rede de ligações de hidrogênio.",
+            "weight": 2.5,
+            "examples": [
+              "tensão superficial depende da coesão",
+              "calor específico depende da energia para romper interações"
+            ]
+          },
+          {
+            "id": "REQ-004",
+            "description": "Prevê corretamente o efeito da quebra/enfraquecimento dessas ligações.",
+            "weight": 2,
+            "examples": [
+              "diminuiria a tensão superficial",
+              "reduziria a capacidade de resistir a mudanças de temperatura"
+            ]
+          },
+          {
+            "id": "REQ-005",
+            "description": "Conecta a alteração prevista a uma consequência biológica ou físico-química.",
+            "weight": 2,
+            "examples": [
+              "afetaria regulação térmica",
+              "prejudicaria capilaridade",
+              "alteraria solubilidade de moléculas polares"
+            ]
+          }
+        ],
+        "partialConcepts": [
+          {
+            "id": "PAR-001",
+            "description": "Menciona ligações de hidrogênio, mas sem relacionar claramente a uma propriedade.",
+            "weight": 0.75,
+            "examples": [
+              "a água tem ligações de hidrogênio"
+            ]
+          },
+          {
+            "id": "PAR-002",
+            "description": "Escolhe uma propriedade correta, mas explica de forma genérica.",
+            "weight": 1,
+            "examples": [
+              "a tensão superficial diminuiria porque as ligações são importantes"
+            ]
+          },
+          {
+            "id": "PAR-003",
+            "description": "Cita polaridade, mas não explica a formação das ligações de hidrogênio.",
+            "weight": 0.75,
+            "examples": [
+              "água é polar"
+            ]
+          }
+        ],
+        "misconceptions": [
+          {
+            "id": "MIS-001",
+            "description": "Confunde ligação de hidrogênio entre moléculas com ligação covalente O-H dentro da molécula.",
+            "weight": -1.5,
+            "examples": [
+              "quebrar ligações de hidrogênio separa oxigênio e hidrogênio da molécula"
+            ]
+          },
+          {
+            "id": "MIS-002",
+            "description": "Afirma que a água é apolar.",
+            "weight": -2,
+            "examples": [
+              "a água não tem polaridade"
+            ]
+          },
+          {
+            "id": "MIS-003",
+            "description": "Afirma que ligações de hidrogênio não influenciam propriedades macroscópicas da água.",
+            "weight": -1,
+            "examples": [
+              "essas ligações não mudam as propriedades da água"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
