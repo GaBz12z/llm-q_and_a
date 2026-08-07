@@ -3,32 +3,23 @@ import csv
 import time
 import argparse
 
-from openai import OpenAI as ORClient, RateLimitError, APIError, APIConnectionError
+from openai import OpenAI, RateLimitError, APIError, APIConnectionError
 
 # ── Argumentos de linha de comando ────────────────────────────────────────────
-parser = argparse.ArgumentParser(description="Avalia respostas via API da OpenRouter.")
+parser = argparse.ArgumentParser(description="Avalia respostas via API da OpenAI.")
 parser.add_argument("--rounds", "-r", type=int, default=1)
-parser.add_argument(
-    "--model", "-m", type=str, default=None,
-    help="Sobrescreve o modelo padrão definido em DEFAULT_MODEL (ex: openai/gpt-4o-mini)."
-)
 args = parser.parse_args()
 ROUNDS = args.rounds
 
 # ══════════════════════════════════════════════════════════════════════════════
-DEFAULT_MODEL           = "google/gemma-4-31b-it:free"
-# ══════════════════════════════════════════════════════════════════════════════
-# adiocionar chave em casa
-# ══════════════════════════════════════════════════════════════════════════════
+TARGET_QUESTION_ID     = "acidsBase_300"
+DELAY_BETWEEN_REQUESTS = 3   # segundos entre requisições normais
+MAX_RETRIES            = 5   # tentativas máximas por resposta em caso de rate limit
 
-TARGET_QUESTION_ID      = "acidsBase_300"
-DELAY_BETWEEN_REQUESTS  = 3   # segundos entre requisições normais
-MAX_RETRIES             = 5   # tentativas máximas por resposta em caso de rate limit
-
+DEFAULT_MODEL          = "gpt-5.6"   # modelo da OpenAI a ser usado
 TEMPERATURE             = 0.0
-MAX_TOKENS              = 100000      # usado apenas se o modelo não for de raciocínio
-
-MODEL = args.model or DEFAULT_MODEL
+MAX_TOKENS              = 500        # usado apenas se o modelo não for de raciocínio
+# ══════════════════════════════════════════════════════════════════════════════
 
 with open("llm-q_and_a/questions.json", encoding="utf-8") as f:
     questions_raw = json.load(f)
@@ -83,30 +74,21 @@ def build_user_message(student_answer: str) -> str:
     )
 
 # ── Detecção de reasoning model ───────────────────────────────────────────────
-# Modelos de raciocínio (o1, o3, o4, série gpt-5, etc.) costumam se beneficiar
-# de mais tokens de saída; alguns provedores no OpenRouter também não aceitam
-# "temperature" para esses modelos.
+# Modelos de raciocínio da OpenAI (o1, o3, o4, série gpt-5, etc.) não aceitam
+# o parâmetro "temperature" e costumam precisar de mais tokens de saída.
 REASONING_KEYWORDS = ("o1", "o3", "o4", "o5", "gpt-5", "reasoning", "thinking")
-is_reasoning_model = any(k in MODEL.lower() for k in REASONING_KEYWORDS)
+is_reasoning_model = any(k in DEFAULT_MODEL.lower() for k in REASONING_KEYWORDS)
 effective_max_tokens = 4000 if is_reasoning_model else MAX_TOKENS
 
-# ── Cliente OpenRouter ──────────────────────────────────────────────────────────
-"""
-    client = ORClient(
-    base_url="https://openrouter.ai/api/v1",
-    api_key=API_KEY,
-)
-"""
-# Cabeçalhos opcionais recomendados pela OpenRouter (aparecem em openrouter.ai/rankings)
-EXTRA_HEADERS = {
-    "HTTP-Referer": "https://bioblocks.local",
-    "X-Title": "Bioblocks Open Answer Evaluator",
-}
+# ── Cliente OpenAI ─────────────────────────────────────────────────────────────
+# A API key é lida automaticamente da variável de ambiente OPENAI_API_KEY
+# (comportamento padrão do SDK).
+# client = OpenAI(api_key="your-api-here")
 
 # ── Info inicial ───────────────────────────────────────────────────────────────
 print(f"{'='*60}")
 print(f"  Questão  : {TARGET_QUESTION_ID}")
-print(f"  Modelo   : {MODEL}")
+print(f"  Modelo   : {DEFAULT_MODEL}")
 print(f"  Rodadas  : {ROUNDS}")
 print(f"  Respostas: {len(answer_data['responses'])}")
 print(f"  Max tok  : {effective_max_tokens}")
@@ -116,34 +98,30 @@ if is_reasoning_model:
 print(f"{'='*60}\n")
 
 # ── Chamada à API com retry automático em rate limit ───────────────────────────
-def call_openrouter(student_answer: str, resp_id: str) -> tuple[float | None, float]:
+def call_openai(student_answer: str, resp_id: str) -> tuple[float | None, float]:
     total_elapsed = 0.0
 
     for attempt in range(1, MAX_RETRIES + 1):
         t0 = time.perf_counter()
         try:
             request_kwargs = {
-                "model": MODEL,
-                "messages": [
-                    {"role": "system", "content": SYSTEM_PROMPT},
-                    {"role": "user", "content": build_user_message(student_answer)},
-                ],
-                "max_tokens": effective_max_tokens,
-                "extra_headers": EXTRA_HEADERS,
+                "model": DEFAULT_MODEL,
+                "instructions": SYSTEM_PROMPT,
+                "input": build_user_message(student_answer),
+                "max_output_tokens": effective_max_tokens,
             }
             if not is_reasoning_model:
                 request_kwargs["temperature"] = TEMPERATURE
 
-            response = client.chat.completions.create(**request_kwargs)
+            response = client.responses.create(**request_kwargs)
             elapsed = time.perf_counter() - t0
             total_elapsed += elapsed
 
-            choice = response.choices[0]
-            finish_reason = getattr(choice, "finish_reason", None)
-            if finish_reason == "length":
-                print(f"  [AVISO] {resp_id}: resposta truncada (finish_reason=length) — aumente max_tokens além de {effective_max_tokens}")
+            if getattr(response, "status", None) == "incomplete":
+                reason = getattr(response, "incomplete_details", None)
+                print(f"  [AVISO] {resp_id}: resposta incompleta ({reason}) — aumente max_output_tokens além de {effective_max_tokens}")
 
-            raw = (choice.message.content or "").strip().strip("`").strip()
+            raw = (response.output_text or "").strip().strip("`").strip()
             if not raw:
                 print(f"  [AVISO] {resp_id}: resposta vazia.")
                 return None, round(total_elapsed, 3)
@@ -198,7 +176,7 @@ with open(OUTPUT_CSV, "w", newline="", encoding="utf-8") as csvfile:
             target_score = round(resp["targetScorePercent"] / 10, 1)
             print(f"  Avaliando {rid} (alvo={target_score})...", end=" ", flush=True)
 
-            model_score, elapsed = call_openrouter(resp["studentAnswer"], rid)
+            model_score, elapsed = call_openai(resp["studentAnswer"], rid)
 
             if model_score is not None:
                 print(f"→ {model_score} ({elapsed}s)")
