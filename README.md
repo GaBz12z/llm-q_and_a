@@ -1,2 +1,2 @@
-# llm-q_and_a
-Sistema de correção de perguntas dissertativas usando LLM e Machine Learning. 
+# Sistema de pergunta e respostas corrigido por LLM's
+Sistema de correção de perguntas dissertativas utilizando diversas LLM's. 
